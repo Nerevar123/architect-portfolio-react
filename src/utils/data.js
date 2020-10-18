@@ -22,8 +22,8 @@ const data = [
     year: '2018',
     preview: require ('../images/work(2).png'),
     photos: [
-      {title: '1. Sketch 1', src: '../images/2.1.png'},
-      {title: '2. Sketch 2', src: '../images/2.2.png'},
+      {title: '1. Sketch 1', src: require ('../images/2.1.png')},
+      {title: '2. Sketch 2', src: require ('../images/2.2.png')},
     ]
   },
   {
@@ -34,11 +34,11 @@ const data = [
     year: '2018',
     preview: require ('../images/work(3).png'),
     photos: [
-      {title: '1. Ground floor and +1 floor plans', src: '../images/3.1.png'},
-      {title: '2. Section and top view', src: '../images/3.2.png'},
-      {title: '3. Outdoor swimming pool', src: '../images/3.3.png'},
-      {title: '4. Entrance view', src: '../images/3.4.png'},
-      {title: '5. Backyard view', src: '../images/3.5.png'}
+      {title: '1. Ground floor and +1 floor plans', src: require ('../images/3.1.png')},
+      {title: '2. Section and top view', src: require ('../images/3.2.png')},
+      {title: '3. Outdoor swimming pool', src: require ('../images/3.3.png')},
+      {title: '4. Entrance view', src: require ('../images/3.4.png')},
+      {title: '5. Backyard view', src: require ('../images/3.5.png')}
     ]
   },
   {
@@ -49,8 +49,8 @@ const data = [
     year: '2017',
     preview: require ('../images/work(4).png'),
     photos: [
-      {title: '1. Plans before and after dismantling', src: '../images/4.1.png'},
-      {title: '2. Living room and terrace view', src: '../images/4.2.png'},
+      {title: '1. Plans before and after dismantling', src: require ('../images/4.1.png')},
+      {title: '2. Living room and terrace view', src: require ('../images/4.2.png')},
     ]
   },
   {
@@ -61,11 +61,11 @@ const data = [
     year: '2016',
     preview: require ('../images/work(5).png'),
     photos: [
-      {title: '1. Site plan and ground floor plan', src: '../images/5.1.png'},
-      {title: '2. +1, +2, +3 floor plan and +5 floor plan', src: '../images/5.2.png'},
-      {title: '3. Sections', src: '../images/5.3.png'},
-      {title: '4. Facades', src: '../images/5.4.png'},
-      {title: '5. View from the street and living room on the fifth floor', src: '../images/5.5.png'}
+      {title: '1. Site plan and ground floor plan', src: require ('../images/5.1.png')},
+      {title: '2. +1, +2, +3 floor plan and +5 floor plan', src: require ('../images/5.2.png')},
+      {title: '3. Sections', src: require ('../images/5.3.png')},
+      {title: '4. Facades', src: require ('../images/5.4.png')},
+      {title: '5. View from the street and living room on the fifth floor', src: require ('../images/5.5.png')}
     ]
   },
   {
@@ -76,10 +76,10 @@ const data = [
     year: '2016',
     preview: require ('../images/work(6).png'),
     photos: [
-      {title: '1. Site plan and measuring plan', src: '../images/6.1.png'},
-      {title: '2. Replanning with furniture and flooring plan', src: '../images/6.2.png'},
-      {title: '3. Ceiling plan and Lightening', src: '../images/6.3.png'},
-      {title: '4. Hair-dressers and reception areas', src: '../images/6.4.png'},
+      {title: '1. Site plan and measuring plan', src: require ('../images/6.1.png')},
+      {title: '2. Replanning with furniture and flooring plan', src: require ('../images/6.2.png')},
+      {title: '3. Ceiling plan and Lightening', src: require ('../images/6.3.png')},
+      {title: '4. Hair-dressers and reception areas', src: require ('../images/6.4.png')},
     ]
   },
   {
@@ -90,10 +90,10 @@ const data = [
     year: '2016',
     preview: require ('../images/work(7).png'),
     photos: [
-      {title: '1. Site plan', src: '../images/7.1.png'},
-      {title: '2. Sections', src: '../images/7.2.png'},
-      {title: '3. Facades', src: '../images/7.3.png'},
-      {title: '4. Swimming pool view', src: '../images/7.4.png'},
+      {title: '1. Site plan', src: require ('../images/7.1.png')},
+      {title: '2. Sections', src: require ('../images/7.2.png')},
+      {title: '3. Facades', src: require ('../images/7.3.png')},
+      {title: '4. Swimming pool view', src: require ('../images/7.4.png')},
 
     ]
   },

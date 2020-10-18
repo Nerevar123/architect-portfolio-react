@@ -18,8 +18,8 @@ function Project(props) {
   return (
     <>
       <div className="header__back-link main__section main__section_margin_m">
-        <a href="index.html#works" className="back-link font"><img src="./blocks/back-link/Vector.svg" alt="Left arrow" className="back-link__arrow" /> Back to works</a>
-        <button onClick={() => history.goBack()}>Back to works</button>
+        {/* <a href="index.html#works" className="back-link font"><img src="./blocks/back-link/Vector.svg" alt="Left arrow" className="back-link__arrow" /> Back to works</a> */}
+        <button className="back-link font button" onClick={() => history.goBack()}>Back to works</button>
       </div>
       <section className="project main__section main__section_margin_s">
         <div className="project__review">

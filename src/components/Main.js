@@ -2,8 +2,9 @@ import React from 'react';
 import bioPortrait from '../images/bio-portrait.jpg';
 import bioScroll from '../images/bio-scroll.svg';
 import data from '../utils/data';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import WorkPreview from './WorkPreview';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Main() {
   return (
@@ -24,7 +25,7 @@ function Main() {
         <h2 className="works__title font font_size_l">Works</h2>
         <div className="works__body">
           {data.map(work => (
-            <Link to={"/work/" + work.id} key={work.id} className="link">
+            <Link to={"/work/" + work.id + "#top"} key={work.id} className="link">
               <WorkPreview data={work} />
             </Link>
           ))}

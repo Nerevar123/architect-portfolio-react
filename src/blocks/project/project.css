@@ -6,15 +6,16 @@
 }
 
 .project__review {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .project__title {
   font-weight: 500;
-font-size: 18px;
-line-height: 28px;
-margin-top: 20px;
-margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 2px;
 
 }
 
@@ -31,6 +32,8 @@ margin-bottom: 2px;
 
 .project__image {
   margin-bottom: 10px;
+  width: 100%;
+  object-fit: contain;
 
 }
 

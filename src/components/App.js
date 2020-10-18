@@ -5,12 +5,12 @@ import Contacts from './Contacts';
 import Footer from './Footer';
 import Work from './Work';
 import PageNotFound from './PageNotFound';
-import { Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import data from '../utils/data';
 
 function App() {
   return (
-    <>
+    <HashRouter basename='/'>
     <Header />
     <Switch>
       <Route exact path="/">
@@ -25,7 +25,7 @@ function App() {
     </Switch>
     <Contacts />
     <Footer />
-  </>
+  </HashRouter>
   );
 }
 
