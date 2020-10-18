@@ -1,0 +1,58 @@
+.connect {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas: "title title"
+                        "details form";
+  justify-content: space-between;
+}
+
+.connect__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  grid-area: title;
+}
+
+.connect__details {
+  grid-area: details;
+}
+
+.connect__subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.connect__links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.connect__links-list {
+  margin-bottom: 25px;
+}
+
+.connect__link {
+}
+
+.connect__icon {
+  margin-right: 12px;
+}
+
+.connect__form {
+  grid-area: form;
+}
+
+@media screen and (max-width: 1100px){
+  .connect {
+    grid-template-areas: "title"
+                          "details"
+                          "form";
+    justify-content: center;
+    row-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .connect__title {
+    margin-bottom: 16px;
+  }
+}

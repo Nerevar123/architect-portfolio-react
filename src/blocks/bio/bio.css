@@ -1,0 +1,70 @@
+.bio {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas: "title photo"
+                       "body photo";
+  justify-content: space-between;
+}
+
+.bio__heading {
+  margin: 0;
+  font-weight: 500;
+  align-self: center;
+  margin-top: 12px;
+  grid-area: title;
+}
+
+.bio__title {
+  display: block;
+}
+
+.bio__title-accent {
+  font-weight: bold;
+}
+
+.bio__body {
+  display: flex;
+  width: 86%;
+  grid-area: body;
+}
+
+.bio__scroll {
+  width: 20px;
+  height: 120px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.bio__copy {
+  margin: 0;
+}
+
+.bio__portrait {
+  grid-area: photo;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px){
+  .bio {
+    grid-template-areas: "title"
+                         "body"
+                         "photo";
+    justify-content: center;
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .bio__scroll {
+    display: none;
+  }
+  .bio__body {
+    width: 100%;
+  }
+  .bio {
+    justify-items: start;
+    row-gap: 16px;
+  }
+}

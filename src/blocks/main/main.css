@@ -1,0 +1,31 @@
+.main {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.main__section {
+  width: 82%;
+}
+
+.main__section_margin_m {
+  margin: 0 auto 90px;
+}
+
+.main__section_margin_s {
+  margin: 0 auto 60px;
+}
+
+@media screen and (max-width: 768px){
+  .main__section {
+    width: 87.2%;
+  }
+  .main__section_margin_m {
+    margin: 32px auto 48px;
+  }
+
+  .main__section_margin_s {
+    margin: 0 auto 8px;
+  }
+}

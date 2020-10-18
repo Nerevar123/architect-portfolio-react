@@ -1,0 +1,45 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: end;
+  gap: 100px;
+}
+
+.project__review {
+
+}
+
+.project__title {
+  font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+margin-top: 20px;
+margin-bottom: 2px;
+
+}
+
+.project__copy {
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.project__images {
+
+
+}
+
+.project__image {
+  margin-bottom: 10px;
+
+}
+
+.project__image-text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 10px;
+  margin-bottom: 30px;
+}
+
+

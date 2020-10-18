@@ -1,0 +1,22 @@
+.works__title {
+  margin-bottom: 30px;
+}
+
+.works__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 20px;
+  row-gap: 52px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+  .works__body {
+    grid-template-columns: repeat(auto-fit, minmax(157.5px, 1fr));
+    column-gap: 12px;
+    row-gap: 24px;
+  }
+  .works__title {
+    margin-bottom: 24px;
+  }
+}
