@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7efce709c561be46221a380ecff11e04",
+    "revision": "02fd127036e84704dbf1a3a4d4ae75ad",
     "url": "/architect-portfolio-react/index.html"
   },
   {
-    "revision": "4b18c9d276322dea47ca",
+    "revision": "8c7869e8d14eeab26ffa",
     "url": "/architect-portfolio-react/static/css/main.953edc1f.chunk.css"
   },
   {
-    "revision": "94a3511bc18b66c17200",
-    "url": "/architect-portfolio-react/static/js/2.515755f7.chunk.js"
+    "revision": "75366ae62feecbb2869d",
+    "url": "/architect-portfolio-react/static/js/2.27621368.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/architect-portfolio-react/static/js/2.515755f7.chunk.js.LICENSE.txt"
+    "url": "/architect-portfolio-react/static/js/2.27621368.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b18c9d276322dea47ca",
-    "url": "/architect-portfolio-react/static/js/main.f828bab4.chunk.js"
+    "revision": "8c7869e8d14eeab26ffa",
+    "url": "/architect-portfolio-react/static/js/main.a26f449e.chunk.js"
   },
   {
     "revision": "bd38d361c1844feeb068",
