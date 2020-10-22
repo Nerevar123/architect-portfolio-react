@@ -2,7 +2,6 @@ import React from 'react';
 import bioPortrait from '../images/bio-portrait.jpg';
 import bioScroll from '../images/bio-scroll.svg';
 import data from '../utils/data';
-// import { Link } from 'react-router-dom';
 import WorkPreview from './WorkPreview';
 import { HashLink as Link } from 'react-router-hash-link';
 

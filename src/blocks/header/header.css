@@ -64,4 +64,10 @@
   .header__link {
     padding: 10px;
   }
+  .header__back-link {
+    position: static;
+  }
+  .header_hided {
+    display: none;
+  }
 }

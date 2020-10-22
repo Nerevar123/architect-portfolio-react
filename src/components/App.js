@@ -9,15 +9,26 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import data from '../utils/data';
 
 function App() {
+  const [hidableHeader, setHidableHeader] = React.useState(false);
+
+  function handleHidingHeader(value) {
+    setHidableHeader(value);
+  };
+
   return (
     <HashRouter basename='/'>
-    <Header />
+    <Header
+      isHidable={hidableHeader}
+    />
     <Switch>
       <Route exact path="/">
         <Main />
       </Route>
       <Route path="/work/:id">
-        <Work data={data} />
+        <Work
+          data={data}
+          hidingHeader={handleHidingHeader}
+        />
       </Route>
       <Route path="*">
         <PageNotFound />

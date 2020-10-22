@@ -1,10 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
-function Header() {
+function Header(props) {
   return (
-    <header className="header main__section main__section_margin_s">
+    <header className={`header main__section main__section_margin_s ${props.isHidable ? 'header_hided' : ''}`}>
       <nav className="header__links">
         <Link smooth to="/" className="header__link link font font_size_xs">Main</Link>
         <Link smooth to="/#works" className="header__link link font font_size_xs">Works</Link>

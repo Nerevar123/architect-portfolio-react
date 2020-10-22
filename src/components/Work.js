@@ -1,6 +1,6 @@
 import React from 'react';
 import PageNotFound from './PageNotFound';
-import { useParams, useHistory  } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 function Project(props) {
   let { id } = useParams();
@@ -9,16 +9,24 @@ function Project(props) {
   let works = props.data;
   const work = works.find(w => w.id === id);
 
+  React.useEffect(() => {
+    props.hidingHeader(true);
+
+    return () => {
+      props.hidingHeader(false);
+    };
+  });
+
+
   if (!work) {
     return (
       <PageNotFound />
     )
-  }
+  };
 
   return (
     <>
       <div className="header__back-link main__section main__section_margin_m">
-        {/* <a href="index.html#works" className="back-link font"><img src="./blocks/back-link/Vector.svg" alt="Left arrow" className="back-link__arrow" /> Back to works</a> */}
         <button className="back-link font button" onClick={() => history.goBack()}>Back to works</button>
       </div>
       <section className="project main__section main__section_margin_s">
@@ -29,10 +37,10 @@ function Project(props) {
         </div>
         <div className="project__images">
           {work.photos.map(photo => (
-            <div key={photo.title}>
+            <figure className="project__figure" key={photo.title}>
               <img src={photo.src} alt={photo.title} className="project__image" />
-              <p className="project__image-text font">{photo.title}</p>
-            </div>
+              <figcaption className="project__image-text font">{photo.title}</figcaption>
+            </figure>
           ))}
         </div>
       </section>
