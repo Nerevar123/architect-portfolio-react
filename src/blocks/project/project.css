@@ -3,6 +3,7 @@
   grid-template-columns: fit-content(25%) minmax(500px, 780px);
   justify-items: end;
   gap: 100px;
+  justify-content: space-around;
 }
 
 .project__review {

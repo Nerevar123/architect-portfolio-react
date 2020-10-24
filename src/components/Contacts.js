@@ -2,6 +2,7 @@ import React from 'react';
 import icon1 from '../images/icon 1.svg';
 import icon2 from '../images/icon 2.svg';
 import icon3 from '../images/icon 3.svg';
+import SubscribeForm from './SubscribeForm';
 
 function Contacts() {
   return (
@@ -24,16 +25,7 @@ function Contacts() {
           </li>
       </ul>
       </div>
-      <form className="form connect__form" name="form" method="GET" action="#">
-        <h3 className="connect__subtitle font font_size_s">Send a message</h3>
-        <fieldset className="form__fieldset">
-          <input type="text" className="form__field form__field_type_text font font_size_xs" name="name" placeholder="Name*" required />
-          <input type="email" className="form__field form__field_type_email font font_size_xs" name="email" placeholder="Email*" required />
-          <input type="text" className="form__field form__field_type_title font font_size_xs" name="title" placeholder="Title" />
-          <textarea className="form__field form__field_type_textarea font font_size_xs" name="message" placeholder="Message"></textarea>
-        </fieldset>
-        <button type="submit" className="form__button font font_size_2xs">Submit</button>
-      </form>
+      <SubscribeForm />
     </section>
   )
 }
