@@ -22,7 +22,7 @@ const SubscribeForm = () => {
         resetForm();
       }}
     >
-      {({ isSubmitting, dirty, isValid, errors }) => (
+      {({ isSubmitting, dirty, isValid }) => (
       <Form className="form connect__form">
         <fieldset className="form__fieldset">
           <label htmlFor="name" className="form__label">
